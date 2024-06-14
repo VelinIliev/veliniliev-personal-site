@@ -1,19 +1,33 @@
 <template>
 	<nav-bar @updateValue="handleUpdateValue"></nav-bar>
 	<Transition>
-		<home-component v-if="receivedValue==='Home'" @updateValue="handleUpdateValue"></home-component>
+		<home-component
+				v-if="receivedValue==='Home'"
+				@updateValue="handleUpdateValue"
+		></home-component>
 	</Transition>
 	<Transition>
-		<about-component v-if="receivedValue==='About'"></about-component>
+		<about-component
+				v-if="receivedValue==='About'"
+				@updateValue="handleUpdateValue"
+		></about-component>
 	</Transition>
 	<Transition>
-		<resume-component v-if="receivedValue==='Resume'"></resume-component>
+		<resume-component
+				v-if="receivedValue==='Resume'"
+				@updateValue="handleUpdateValue"
+		></resume-component>
 	</Transition>
+
+		<portfolio-component
+				v-if="receivedValue==='Portfolio'"
+		></portfolio-component>
+
 	<Transition>
-		<portfolio-component v-if="receivedValue==='Portfolio'"></portfolio-component>
-	</Transition>
-	<Transition>
-		<contact-component v-if="receivedValue==='Contact'"></contact-component>
+		<contact-component
+				v-if="receivedValue==='Contact'"
+				@updateValue="handleUpdateValue"
+		></contact-component>
 	</Transition>
 
 </template>
@@ -40,6 +54,7 @@ function handleUpdateValue(value) {
 	--vi-dark: #212529;
 	--vi-yellow: #ffc107;
 	--vi-light-dark: #343a40;
+	--vi-dark-transparent: #212529CC;
 
 }
 #app {

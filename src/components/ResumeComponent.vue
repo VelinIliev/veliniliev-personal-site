@@ -155,7 +155,6 @@ let data = [
 		link: "https://softuni.bg/certificates/details/213389/9f709d59"
 	},
 ]
-console.log(data)
 </script>
 
 <style scoped>
