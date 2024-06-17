@@ -245,4 +245,14 @@ a.btn {
 b {
 	color: var(--vi-yellow);
 }
+@media only screen and (max-width: 800px) {
+	.wrapper {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.wrapper-education>.module {
+		width: 100%;
+	}
+}
 </style>

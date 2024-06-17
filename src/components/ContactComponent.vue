@@ -1,21 +1,23 @@
 <template>
 	<div class="wrapper">
 		<div class="left-side">
-			<div class="line"></div>
-			<div class="contact">
-				Contact
-			</div>
-			<h2>Get in touch</h2>
-			<h3>Location</h3>
-			<p>
-				Sofia, Bulgaria
-			</p>
-			<h3>Contact</h3>
-				<div class="link">
-					<a href="mailto:veliniliev@gmail.com" target="_blank">Email: veliniliev@gmail.com</a>
+			<div class="test">
+				<div class="line"></div>
+				<div class="contact">
+					Contact
 				</div>
-			<div class="link">
-				<a href="https://github.com/VelinIliev" target="_blank">GitHub: https://github.com/VelinIliev</a>
+				<h2>Get in touch</h2>
+				<h3>Location</h3>
+				<p>
+					Sofia, Bulgaria
+				</p>
+				<h3>Contact</h3>
+					<div class="link">
+						<a href="mailto:veliniliev@gmail.com" target="_blank">Email: veliniliev@gmail.com</a>
+					</div>
+				<div class="link">
+					<a href="https://github.com/VelinIliev" target="_blank">GitHub: https://github.com/VelinIliev</a>
+				</div>
 			</div>
 		</div>
 		<div class="right-side">
@@ -177,5 +179,22 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
   transition: background-color 6000s;
   -webkit-text-fill-color: var(--vi-white);
+}
+
+@media only screen and (max-width: 800px) {
+	.wrapper {
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.left-side, .right-side {
+		width: 100%;
+	}
+	.left-side {
+		border-radius: 0;
+	}
+	.right-side {
+		background-color: var(--vi-dark);
+		margin-top: -9rem;
+	}
 }
 </style>

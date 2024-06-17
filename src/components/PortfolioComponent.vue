@@ -120,8 +120,8 @@ let projects = [
 }
 .image {
 	cursor: pointer;
-	width: 30rem;
-	height: 20rem;
+	width: 49%;
+	height: 24rem;
 	border-radius: 1rem;
 	overflow: hidden;
 	transition: all .3s;
@@ -137,6 +137,7 @@ let projects = [
 }
 .skill {
 	position: relative;
+	width: 80%;
 	font-size: .9rem;
 	left: 3rem;
 	color: var(--vi-yellow);
@@ -258,4 +259,43 @@ h2 {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
+@media only screen and (max-width: 1050px) {
+	.image {
+		width: 48%;
+		height: 20rem;
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+	.wrapper {
+		width: 90%;
+	}
+	.project-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.image {
+		cursor: pointer;
+		width: 100%;
+		height: 24rem;
+		border-radius: 1rem;
+		overflow: hidden;
+		transition: all .3s;
+	}
+	.modal {
+		padding-top: 3rem;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.modal-content {
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.modal-content {
+		width: 300px;
+	}
+}
+
 </style>

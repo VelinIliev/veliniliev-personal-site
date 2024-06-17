@@ -91,4 +91,46 @@ ul {
 	display: block;
 	transition: all 1s;
 }
+@media only screen and (max-width: 800px) {
+	.nav-wrapper {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 3rem;
+		background-color: var(--vi-yellow);
+		z-index: 100;
+	}
+	.logo {
+		display: none;
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+
+	}
+	.link-element {
+		position: static;
+		margin-top: 0rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		left: 0;
+		font-weight: 600;
+		width: 3rem;
+		height: 3rem;
+		padding-right: 20px;
+		background-color: var(--vi-yellow);
+		border-radius: 0;
+		transition: all 0s;
+	}
+	.link-element i {
+		color: var(--vi-dark);
+	}
+	.link-element:hover > .text {
+		display: none;
+	}
+}
 </style>

@@ -89,6 +89,7 @@ body, html {
 	padding-top: 4rem;
 	width: 80%;
 	max-width: 1400px;
+	padding-bottom: 5rem;
 }
 .btn {
 	width: 9rem;
@@ -114,4 +115,11 @@ body, html {
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 var(--vi-yellow); }
 }
+@media only screen and (max-width: 800px) {
+	.wrapper {
+		width: 90%;
+		padding-top: 2rem;
+	}
+}
+
 </style>

@@ -98,4 +98,24 @@ h1 {
 	height: 100%;
 	object-fit: cover;
 }
+@media only screen and (max-width: 800px) {
+	.wrapper {
+		flex-direction: column-reverse;
+		width: 90%;
+	}
+	.left-side {
+		width: 100%;
+		margin-top: -8rem;
+		border-radius: 0;
+	}
+	.right-side {
+		width: 100%;
+		height: 10px;
+	}
+	.right-side img {
+		width: 100%;
+		height: 80%;
+		object-fit: cover;
+	}
+}
 </style>
