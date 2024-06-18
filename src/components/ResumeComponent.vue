@@ -80,7 +80,7 @@
 					<div class="module-right">
 						<p class="period">{{ item.period }}</p>
 						<h4>{{ item.name }}</h4>
-						<p class="description">
+						<p class="description" v-if="item.link">
 							<a :href="item.link" target="_blank">certificate </a>
 						</p>
 					</div>
@@ -94,6 +94,11 @@
 
 <script setup>
 let data = [
+	{
+		period: "September 2020 - April 2021",
+		name: "Front-End Developer - Progress",
+		link: ""
+	},
 	{
 		period: "July 2022 - August 2022",
 		name: "Programming Basics",
@@ -126,7 +131,7 @@ let data = [
 	},
 	{
 		period: "March 2023 - April 2023",
-		name: "JS front-end",
+		name: "JS Front-End",
 		link: "https://softuni.bg/certificates/details/170672/ad7e8ffb"
 	},
 	{

@@ -4,23 +4,23 @@
 			<li>
 				<img src="logos/vi-logo.svg" class="logo" @click="emitValue('Home')" alt="logo">
 			</li>
-			<li @click="emitValue('Home')" class="link-element">
+			<li @click="emitValue('Home')" :class="['link-element', currentValue==='Home' ? 'active' : '']">
 				<div class="text">Home</div>
 				<div><i class="fa-solid fa-house"></i></div>
 			</li>
-			<li @click="emitValue('About')" class="link-element">
+			<li @click="emitValue('About')" :class="['link-element', currentValue==='About' ? 'active' : '']">
 				<div class="text">About</div>
 				<div><i class="fa-solid fa-user"></i></div>
 			</li>
-			<li @click="emitValue('Resume')" class="link-element">
+			<li @click="emitValue('Resume')" :class="['link-element', currentValue==='Resume' ? 'active' : '']">
 				<div class="text">Resume</div>
 				<div><i class="fa-solid fa-file"></i></div>
 			</li>
-			<li @click="emitValue('Portfolio')" class="link-element">
+			<li @click="emitValue('Portfolio')" :class="['link-element', currentValue==='Portfolio' ? 'active' : '']">
 				<div class="text">Portfolio</div>
 				<div><i class="fa-solid fa-briefcase"></i></div>
 			</li>
-			<li @click="emitValue('Contact')" class="link-element">
+			<li @click="emitValue('Contact')" :class="['link-element', currentValue==='Contact' ? 'active' : '']">
 				<div class="text">Contact</div>
 				<div><i class="fa-solid fa-envelope"></i></div>
 			</li>
@@ -31,11 +31,13 @@
 </template>
 
 <script setup>
-import { defineEmits } from 'vue';
+import {defineEmits, ref} from 'vue';
 const emit = defineEmits(['updateValue']);
+const currentValue = ref('')
 
 function emitValue(value) {
   emit('updateValue', value);
+	currentValue.value = value;
 }
 </script>
 
@@ -90,6 +92,15 @@ ul {
 .link-element:hover > .text {
 	display: block;
 	transition: all 1s;
+}
+.active {
+	background-color: var(--vi-yellow);
+}
+.active i {
+	color: var(--vi-dark);
+}
+.active .text {
+	color: var(--vi-dark) ;
 }
 @media only screen and (max-width: 800px) {
 	.nav-wrapper {
