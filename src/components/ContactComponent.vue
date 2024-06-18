@@ -25,19 +25,19 @@
 				<form @submit.prevent="sendEmail">
 					<div>
 						<label for="name">Your Name</label><br>
-						<input type="text" v-model="emailData.name" required placeholder="Enter Your Name"/>
+						<input type="text" id="name" v-model="emailData.name" required autocomplete="name" placeholder="Enter Your Name"/>
 					</div>
 					<div>
-						<label for="from">Your Email:</label><br>
-						<input type="email" v-model="emailData.from" required placeholder="Enter Your Email"/>
+						<label for="email">Your Email:</label><br>
+						<input type="email" id="email" v-model="emailData.from" required autocomplete="email" placeholder="Enter Your Email"/>
 					</div>
 					<div>
 						<label for="subject">Subject:</label><br>
-						<input type="text" v-model="emailData.subject" required placeholder="Enter Your Subject"/>
+						<input type="text" id="subject" v-model="emailData.subject" required placeholder="Enter Your Subject"/>
 					</div>
 					<div>
 						<label for="message">Message:</label><br>
-						<textarea v-model="emailData.message" required placeholder="Enter Your Message"></textarea>
+						<textarea v-model="emailData.message" required id="message" placeholder="Enter Your Message"></textarea>
 					</div>
 					<button type="submit" class="btn">Send Email</button>
 				</form>
