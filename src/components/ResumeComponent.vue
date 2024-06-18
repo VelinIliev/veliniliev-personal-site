@@ -86,7 +86,7 @@
 					</div>
 				</div>
 				</div>
-				<a href="/resume/VelinIliev-resume.pdf" download class="btn resume">Download Resume</a>
+				<a href="resume/VelinIliev-resume.pdf" download class="btn resume">Download Resume</a>
 			</div>
 		</div>
 	</div>

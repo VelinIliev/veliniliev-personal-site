@@ -14,7 +14,7 @@
 			<button class="btn"  @click="emitValue('About')">About Me</button>
 		</div>
 		<div class="right-side">
-			<img src="/images/48b8646e-bd7f-484c-b145-34eae31d6f1e.png">
+			<img src="images/48b8646e-bd7f-484c-b145-34eae31d6f1e.png">
 		</div>
 	</div>
 </template>

@@ -2,7 +2,7 @@
 	<div class="nav-wrapper">
 		<ul>
 			<li>
-				<img src="/vi-logo.svg" class="logo"  @click="emitValue('Home')" alt="logo">
+				<img src="logos/vi-logo.svg" class="logo" @click="emitValue('Home')" alt="logo">
 			</li>
 			<li @click="emitValue('Home')" class="link-element">
 				<div class="text">Home</div>

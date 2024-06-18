@@ -1,7 +1,7 @@
 <template>
 	<div class="wrapper">
 		<div class="left-side">
-			<img src="/images/21be7acb-b749-45cc-989f-4bb867686444.png">
+			<img src="images/21be7acb-b749-45cc-989f-4bb867686444.png">
 		</div>
 		<div class="right-side">
 			<div class="line"></div>
@@ -19,7 +19,7 @@
 				Excellent problem-solving skills and the ability to collaborate effectively within a team.
 				Strong communication skills in both technical and non-technical contexts.
 			</p>
-			<a href="/resume/VelinIliev-resume.pdf" download class="btn resume">Download Resume</a>
+			<a href="resume/VelinIliev-resume.pdf" download class="btn resume">Download Resume</a>
 		</div>
 	</div>
 </template>

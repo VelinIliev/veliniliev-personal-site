@@ -58,17 +58,17 @@ function closeModal() {
 let projects = [
 	{
 		id: 0,
-		image: "/images/personal-site.png",
+		image: "images/personal-site.png",
 		name: "Personal site",
-		description: "",
-		liveLink: "",
+		description: "My personal page, build with VueJs and deployed to github pages.",
+		liveLink: "https://veliniliev.github.io/veliniliev-personal-site/",
 		codeLink: "https://github.com/VelinIliev/veliniliev-personal-site",
 		frontEndLink: "",
 		backEndLink: ""
 	},
 	{
 		id: 1,
-		image: "/images/kitchen-helper.png",
+		image: "images/kitchen-helper.png",
 		name: "Kitchen Helper",
 		description: "Kitchen Helper is an innovative project developed for SoftUni Intern and Team Lead Academy, " +
 				"designed to revolutionize the culinary experience. This cutting-edge application is a recipe hub " +
@@ -87,7 +87,7 @@ let projects = [
 	},
 	{
 		id: 2,
-		image: "/images/ctrs.png",
+		image: "images/ctrs.png",
 		name: "CTRS project",
 		description: "Developed a Server Side Rendering project aimed at facilitating cinema ticket reservations. " +
 				"This dynamic web application was crafted using a robust tech stack, including Django for the backend, " +
