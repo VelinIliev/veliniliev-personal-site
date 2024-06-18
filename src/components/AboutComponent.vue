@@ -91,6 +91,7 @@ a.btn {
 	.left-side {
 		width: 100%;
 		height: 10px;
+		border-radius: 0;
 	}
 	.left-side img {
 		width: 100%;
