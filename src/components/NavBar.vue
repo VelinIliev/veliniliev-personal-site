@@ -46,6 +46,7 @@ function emitValue(value) {
 	position: fixed;
 	width: 5.5rem;
 	height: 100%;
+	z-index: 100;
 }
 .logo {
 	padding: .5rem;
@@ -127,15 +128,18 @@ ul {
 		margin-top: 0rem;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		left: 0;
 		font-weight: 600;
 		width: 3rem;
 		height: 3rem;
-		padding-right: 20px;
+		padding-right: 0px;
 		background-color: var(--vi-yellow);
 		border-radius: 0;
 		transition: all 0s;
+	}
+	.link-element i {
+		margin-left: 0;
 	}
 	.link-element i {
 		color: var(--vi-dark);
@@ -143,5 +147,14 @@ ul {
 	.link-element:hover > .text {
 		display: none;
 	}
+	.active i {
+		color: var(--vi-yellow) ;
+	}
+	.active {
+		background-color: var(--vi-dark);
+		padding-right: 0px;
+	}
 }
+
+
 </style>
