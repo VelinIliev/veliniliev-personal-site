@@ -180,7 +180,9 @@ input:-webkit-autofill:active  {
   transition: background-color 6000s;
   -webkit-text-fill-color: var(--vi-white);
 }
-
+.btn {
+	background-color: var(--vi-dark);
+}
 @media only screen and (max-width: 800px) {
 	.wrapper {
 		display: inline-flex;

@@ -96,7 +96,7 @@
 let data = [
 	{
 		period: "September 2020 - April 2021",
-		name: "Front-End Developer - Progress",
+		name: "Front-End Developer",
 		link: ""
 	},
 	{
@@ -249,6 +249,9 @@ a.btn {
 }
 b {
 	color: var(--vi-yellow);
+}
+.btn {
+	background-color: var(--vi-dark);
 }
 @media only screen and (max-width: 800px) {
 	.wrapper {
