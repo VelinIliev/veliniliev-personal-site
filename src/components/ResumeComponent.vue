@@ -27,8 +27,8 @@
 						<i class="fa-solid fa-briefcase"></i>
 					</div>
 					<div class="module-right">
-						<p class="period">May 2024 - present</p>
-						<h4>Full Stack Developer - Intern & Team Lead Academy 2 - SoftUni</h4>
+						<p class="period">May 2024 - August 2024</p>
+						<h4>Full Stack Developer - Intern & Team Lead Academy 2</h4>
 						<p class="description">
 							Migration of SULS (Software University Learning System) from .NET Framework 4.6.1, Entity Framework 6.1.3,
 							ASP.NET MVC 5.2 to .NET 8, Entity Framework Core, ASP.NET Core MVC
@@ -41,9 +41,9 @@
 					</div>
 					<div class="module-right">
 						<p class="period">November 2023 - February 2024</p>
-						<h4>Full Stack Developer - Intern & Team Lead Academy - SoftUni</h4>
+						<h4>Full Stack Developer - Intern & Team Lead Academy</h4>
 						<p class="description">
-							As an intern in SoftUni’s ‘Intern & Team Lead Academy,’ I am actively involved in the
+							As an intern in ‘Intern & Team Lead Academy,’ I am actively involved in the
 							‘Kitchen Helper’ project. I am contributing to the development of an advanced recipe
 							search system and front end. Our team is dedicated to enhancing filters for preparation time,
 							complexity, nutrition, etc. We leverage technologies such as FastAPI, PostgreSQL, Alembic,
