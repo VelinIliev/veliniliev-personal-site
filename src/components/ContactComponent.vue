@@ -20,77 +20,77 @@
 				</div>
 			</div>
 		</div>
-		<div class="right-side">
-			<div>
-				<form @submit.prevent="sendEmail">
-					<div>
-						<label for="name">Your Name</label><br>
-						<input type="text" id="name" v-model="emailData.name" required autocomplete="name" placeholder="Enter Your Name"/>
-					</div>
-					<div>
-						<label for="email">Your Email:</label><br>
-						<input type="email" id="email" v-model="emailData.from" required autocomplete="email" placeholder="Enter Your Email"/>
-					</div>
-					<div>
-						<label for="subject">Subject:</label><br>
-						<input type="text" id="subject" v-model="emailData.subject" required placeholder="Enter Your Subject"/>
-					</div>
-					<div>
-						<label for="message">Message:</label><br>
-						<textarea v-model="emailData.message" required id="message" placeholder="Enter Your Message"></textarea>
-					</div>
-					<button type="submit" class="btn">Send Email</button>
-				</form>
-				<p v-if="responseMessage">{{ responseMessage }}</p>
-			</div>
-		</div>
+<!--		<div class="right-side">-->
+<!--			<div>-->
+<!--				<form @submit.prevent="sendEmail">-->
+<!--					<div>-->
+<!--						<label for="name">Your Name</label><br>-->
+<!--						<input type="text" id="name" v-model="emailData.name" required autocomplete="name" placeholder="Enter Your Name"/>-->
+<!--					</div>-->
+<!--					<div>-->
+<!--						<label for="email">Your Email:</label><br>-->
+<!--						<input type="email" id="email" v-model="emailData.from" required autocomplete="email" placeholder="Enter Your Email"/>-->
+<!--					</div>-->
+<!--					<div>-->
+<!--						<label for="subject">Subject:</label><br>-->
+<!--						<input type="text" id="subject" v-model="emailData.subject" required placeholder="Enter Your Subject"/>-->
+<!--					</div>-->
+<!--					<div>-->
+<!--						<label for="message">Message:</label><br>-->
+<!--						<textarea v-model="emailData.message" required id="message" placeholder="Enter Your Message"></textarea>-->
+<!--					</div>-->
+<!--					<button type="submit" class="btn">Send Email</button>-->
+<!--				</form>-->
+<!--				<p v-if="responseMessage">{{ responseMessage }}</p>-->
+<!--			</div>-->
+<!--		</div>-->
 	</div>
 </template>
 
-<script setup>
-	import { ref } from 'vue';
-import emailjs from 'emailjs-com';
+<!--<script setup>-->
+<!--	import { ref } from 'vue';-->
+<!--import emailjs from 'emailjs-com';-->
 
-const emailData = ref({
-  from: '',
-  subject: '',
-  message: '',
-	name: '',
-});
+<!--const emailData = ref({-->
+<!--  from: '',-->
+<!--  subject: '',-->
+<!--  message: '',-->
+<!--	name: '',-->
+<!--});-->
 
-const responseMessage = ref('');
+<!--const responseMessage = ref('');-->
 
-async function sendEmail() {
-  try {
-    const serviceID = process.env.VUE_APP_EMAILJS_serviceID;
-    const templateID = process.env.VUE_APP_EMAILJS_templateID;
-    const userID = process.env.VUE_APP_EMAILJS_userID;
+<!--async function sendEmail() {-->
+<!--  try {-->
+<!--    const serviceID = process.env.VUE_APP_EMAILJS_serviceID;-->
+<!--    const templateID = process.env.VUE_APP_EMAILJS_templateID;-->
+<!--    const userID = process.env.VUE_APP_EMAILJS_userID;-->
 
-    const templateParams = {
-      from_name: emailData.value.name,
-			to_name: "Velin",
-      subject: emailData.value.subject,
-      message: `from: ${emailData.value.from}\n
-      					name: ${emailData.value.name}\n
-      					subject: ${emailData.value.subject}\n
-      					message: ${emailData.value.message}`,
-    };
+<!--    const templateParams = {-->
+<!--      from_name: emailData.value.name,-->
+<!--			to_name: "Velin",-->
+<!--      subject: emailData.value.subject,-->
+<!--      message: `from: ${emailData.value.from}\n-->
+<!--      					name: ${emailData.value.name}\n-->
+<!--      					subject: ${emailData.value.subject}\n-->
+<!--      					message: ${emailData.value.message}`,-->
+<!--    };-->
 
-    const response = await emailjs.send(serviceID, templateID, templateParams, userID);
-		if (response.status === 200) {
-			responseMessage.value = 'Email sent successfully!';
-			emailData.value.from = '';
-			emailData.value.subject = '';
-			emailData.value.message = '';
-			emailData.value.name = '';
-		}
-  } catch (error) {
-    responseMessage.value = 'Error sending email';
-    console.error(error);
-  }
+<!--    const response = await emailjs.send(serviceID, templateID, templateParams, userID);-->
+<!--		if (response.status === 200) {-->
+<!--			responseMessage.value = 'Email sent successfully!';-->
+<!--			emailData.value.from = '';-->
+<!--			emailData.value.subject = '';-->
+<!--			emailData.value.message = '';-->
+<!--			emailData.value.name = '';-->
+<!--		}-->
+<!--  } catch (error) {-->
+<!--    responseMessage.value = 'Error sending email';-->
+<!--    console.error(error);-->
+<!--  }-->
 
-}
-</script>
+<!--}-->
+<!--</script>-->
 
 <style scoped>
 .left-side {
