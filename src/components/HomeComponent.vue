@@ -5,7 +5,7 @@
 			<p class="antecedent">Hey, I am</p>
 			<h1>Velin Iliev</h1>
 			<p class="profession one">Full-Stack Developer</p>
-			<p class="profession two">UX/UI/Graphic Designer</p>
+			<p class="profession two">Graphic Designer</p>
 			<p class="description">
 				Full-Stack Developer and Graphic Designer with a unique blend of technical and creative skills.
 				Proficient in both front and back end development, alongside a strong design background.
