@@ -27,7 +27,7 @@
 						<i class="fa-solid fa-briefcase"></i>
 					</div>
 					<div class="module-right">
-						<p class="period">May 2024 - August 2024</p>
+						<p class="period">May 2024 - October 2024</p>
 						<h4>Full Stack Developer - Intern & Team Lead Academy 2</h4>
 						<p class="description">
 							Migration of SULS (Software University Learning System) from .NET Framework 4.6.1, Entity Framework 6.1.3,
