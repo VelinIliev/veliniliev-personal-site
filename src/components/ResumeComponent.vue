@@ -110,12 +110,7 @@ let data = [
 		link1: "https://softuni.bg/certificates/details/148794/32086962"
 	},
 	{
-		period: "January 2023 - February 2023",
-		name: "HTML & CSS",
-		link1: "https://softuni.bg/certificates/details/162904/6154e496"
-	},
-	{
-		period: "January 2023 - February 2023",
+		period: "January 2023 - April 2023",
 		name: "Python Advanced",
 		link1: "https://softuni.bg/certificates/details/159314/afb9a3d3"
 	},
@@ -130,23 +125,13 @@ let data = [
 		link1: ""
 	},
 	{
-		period: "March 2023 - April 2023",
-		name: "Python OOP",
-		link1: "https://softuni.bg/certificates/details/168162/acb3f086"
-	},
-	{
-		period: "March 2023 - April 2023",
+		period: "January 2023 - April 2023",
 		name: "JS Front-End",
 		link1: "https://softuni.bg/certificates/details/170672/ad7e8ffb"
 	},
 	{
-		period: "May 2023 - June 2023",
-		name: "Python Web Basics (Django)",
-		link1: "https://softuni.bg/certificates/details/177840/0f00f69b"
-	},
-	{
-		period: "July 2023 - August 2023",
-		name: "Python Web Framework (Django)",
+		period: "May 2023 - August 2023",
+		name: "Python Web (Django)",
 		link1: "https://softuni.bg/certificates/details/182369/e4bb5d6e"
 	},
 	{
