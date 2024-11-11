@@ -102,62 +102,81 @@ let data = [
 	{
 		period: "July 2022 - August 2022",
 		name: "Programming Basics",
-		link: "https://softuni.bg/certificates/details/140540/cdc98c99"
+		link1: "https://softuni.bg/certificates/details/140540/cdc98c99"
 	},
 	{
 		period: "September 2022 - December 2022",
 		name: "Programming Fundamentals",
-		link: "https://softuni.bg/certificates/details/148794/32086962"
+		link1: "https://softuni.bg/certificates/details/148794/32086962"
 	},
 	{
 		period: "January 2023 - February 2023",
 		name: "HTML & CSS",
-		link: "https://softuni.bg/certificates/details/162904/6154e496"
+		link1: "https://softuni.bg/certificates/details/162904/6154e496"
 	},
 	{
 		period: "January 2023 - February 2023",
 		name: "Python Advanced",
-		link: "https://softuni.bg/certificates/details/159314/afb9a3d3"
+		link1: "https://softuni.bg/certificates/details/159314/afb9a3d3"
 	},
 	{
 		period: "January 2023 - February 2023",
 		name: "MSSQL",
-		link: "https://softuni.bg/certificates/details/157955/30bb58a2"
+		link1: "https://softuni.bg/certificates/details/157955/30bb58a2"
+	},
+	{
+		period: "February 2023 - April 2023",
+		name: "Web Applications with Flask",
+		link1: ""
 	},
 	{
 		period: "March 2023 - April 2023",
 		name: "Python OOP",
-		link: "https://softuni.bg/certificates/details/168162/acb3f086"
+		link1: "https://softuni.bg/certificates/details/168162/acb3f086"
 	},
 	{
 		period: "March 2023 - April 2023",
 		name: "JS Front-End",
-		link: "https://softuni.bg/certificates/details/170672/ad7e8ffb"
+		link1: "https://softuni.bg/certificates/details/170672/ad7e8ffb"
 	},
 	{
 		period: "May 2023 - June 2023",
 		name: "Python Web Basics (Django)",
-		link: "https://softuni.bg/certificates/details/177840/0f00f69b"
+		link1: "https://softuni.bg/certificates/details/177840/0f00f69b"
 	},
 	{
 		period: "July 2023 - August 2023",
 		name: "Python Web Framework (Django)",
-		link: "https://softuni.bg/certificates/details/182369/e4bb5d6e"
+		link1: "https://softuni.bg/certificates/details/182369/e4bb5d6e"
 	},
 	{
-		period: "September 2023 - October 2023",
-		name: "PostgreSQL",
-		link: "https://softuni.bg/certificates/details/186015/5edba1e2"
+		period: "September 2023 - December 2023",
+		name: "Python DB",
+		link1: "https://softuni.bg/certificates/details/186015/5edba1e2"
 	},
 	{
-		period: "November 2023 - December 2023",
-		name: "Python ORM",
-		link: "https://softuni.bg/certificates/details/193809/7a314e6e"
+		period: "October 2023 - December 2023",
+		name: "ReactJS",
+	},
+	// {
+	// 	period: "November 2023 - December 2023",
+	// 	name: "Python ORM",
+	// 	link1: "https://softuni.bg/certificates/details/193809/7a314e6e"
+	// },
+	{
+		period: "January 2024 - April 2024",
+		name: "DevOps for Developers",
+		link1: "https://softuni.bg/certificates/details/213389/9f709d59"
 	},
 	{
-		period: "March 2024 - April 2024",
-		name: "Software Engineering and DevOps",
-		link: "https://softuni.bg/certificates/details/213389/9f709d59"
+		period: "September 2024 - December 2024",
+		name: "UX Design Advanced",
+		link1: ""
+	},
+	{
+		period: "January 2025 - April 2025",
+		name: "UI Design Advanced",
+		link1: ""
 	},
 ]
 </script>
@@ -201,6 +220,7 @@ p {
 }
 .module {
 	display: flex;
+	margin-bottom: 2rem;
 }
 .module-left {
 	padding-top: 1.5rem;
